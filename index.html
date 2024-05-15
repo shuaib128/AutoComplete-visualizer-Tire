@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Text Auto Complete vusualizer (Trie)</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="index.css" />
+    </head>
+    <body>
+        <h2 class="page-title">Autocomplete visualizer (Trie)</h2>
+
+        <div class="section_">
+            <div class="input_">
+                <label for="input">Search Word</label><br />
+                <input type="text" name="search-field" id="search-field" />
+
+                <div class="words"></div>
+            </div>
+
+            <dir class="visualize_">
+                <svg
+                    style="width: 100%"
+                    id="tree-container"
+                    width="800"
+                    height="600"
+                ></svg>
+            </dir>
+        </div>
+
+        <script src="https://d3js.org/d3.v6.min.js"></script>
+        <script src="js/index.js"></script>
+        <script src="js/trie.js"></script>
+    </body>
+</html>
